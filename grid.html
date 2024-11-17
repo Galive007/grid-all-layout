@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Layout</title>
+    <style>
+        .parent{
+            text-align: center;
+            border: 1px solid blue;
+            color: white;
+            width: 700px;
+            height: 500px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: 150px 150px;
+            /* justify-items: center;
+            align-items: center; */
+            justify-content: space-between;
+            align-content: center;
+            /* justify-items: start; */
+            /* align-items: end; */
+            gap: 10px;
+        }
+        .child-1{
+            background-color: brown;
+            padding: 10px;
+            /* align-self: center;
+            justify-self: center; */
+        }
+        .child-2{
+            background-color: aqua;
+            padding: 10px;
+        }
+        .child-3{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .child-4{
+            background-color: black;
+            padding: 10px;
+        }
+        .child-5{
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        .child-6{
+            background-color: coral;
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <section class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">5</div>
+        <div class="child-6">6</div>
+    </section>
+</body>
+</html>
